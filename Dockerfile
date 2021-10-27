@@ -17,4 +17,3 @@ COPY ./app /app
 RUN adduser -D demin
 USER demin
 
-
