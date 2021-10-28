@@ -45,7 +45,7 @@ class PrivateIngredientsApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data, serializer.data)
 
-    def test_ingredients_limited_test(self):
+    def test_ingredients_limited__to_use(self):
         user2 = get_user_model().objects.create_user(
             'other@solution.com',
             'testpass'
